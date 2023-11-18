@@ -11,16 +11,15 @@ import {
 	polygon,
 	base,
 	zora,
-	localhost
+	hardhat,
 } from "wagmi/chains"
 import { publicProvider } from "wagmi/providers/public"
 import { Lexend } from "next/font/google"
 
 const lexend = Lexend({ subsets: ["latin"] })
-
 const { chains, publicClient, webSocketPublicClient } = configureChains(
 	[
-		localhost,
+		hardhat /*localhost is not the same with hardhat */,
 		mainnet,
 		polygon,
 		optimism,
