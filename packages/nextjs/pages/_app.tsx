@@ -15,6 +15,7 @@ import {
 } from "wagmi/chains"
 import { publicProvider } from "wagmi/providers/public"
 import { Lexend } from "next/font/google"
+import Navbar from "@/components/Navbar"
 
 const lexend = Lexend({ subsets: ["latin"] })
 const { chains, publicClient, webSocketPublicClient } = configureChains(
@@ -49,7 +50,10 @@ function MyApp({ Component, pageProps }: AppProps) {
 		<div className={lexend.className}>
 			<WagmiConfig config={wagmiConfig}>
 				<RainbowKitProvider chains={chains}>
-					<Component {...pageProps} />
+					<div className="flex flex-col min-h-screen w-screen item-center justify-start px-4 bg-white">
+						<Navbar />
+						<Component {...pageProps} />
+					</div>
 				</RainbowKitProvider>
 			</WagmiConfig>
 		</div>
