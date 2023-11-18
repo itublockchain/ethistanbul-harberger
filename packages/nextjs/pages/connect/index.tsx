@@ -57,6 +57,7 @@ export default function Connect() {
               return (
                 <div style={{ display: 'flex', gap: 12 }}>
                   <button
+                    className="w-[490px] h-[93px] bg-[#3DB9CF] hover:bg-[#19D9CF] rounded-[25px] text-white text-[35px] flex justify-center items-center"
                     onClick={openChainModal}
                     style={{ display: 'flex', alignItems: 'center' }}
                     type="button"
@@ -84,7 +85,7 @@ export default function Connect() {
                     {chain.name}
                   </button>
 
-                  <button onClick={openAccountModal} type="button">
+                  <button onClick={openAccountModal} type="button" className="w-[490px] h-[93px] bg-[#3DB9CF] hover:bg-[#19D9CF] rounded-[25px] text-white text-[35px]">
                     {account.displayName}
                     {account.displayBalance
                       ? ` (${account.displayBalance})`
