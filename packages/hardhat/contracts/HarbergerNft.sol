@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.17;
 
-import {Owned} from "solmate/auth/Owned.sol";
-import {ERC721} from "solmate/tokens/ERC721.sol";
-import {FixedPointMathLib} from "solmate/utils/FixedPointMathLib.sol";
+import "solmate/src/auth/Owned.sol";
+import "solmate/src/tokens/ERC721.sol";
+import {FixedPointMathLib} from "solmate/src/utils/FixedPointMathLib.sol";
 import {LibBase37} from "./utils/LibBase37.sol";
 
 /// @title HarbergerNft
