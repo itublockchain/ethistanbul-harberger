@@ -3253,6 +3253,7 @@ __metadata:
     prettier: ~2.8.4
     qrcode: ~1.5.1
     solidity-coverage: ~0.8.2
+    solmate: ^6.2.0
     ts-node: ~10.9.1
     typechain: ~8.1.0
     typescript: ~5.1.6
@@ -13444,6 +13445,13 @@ __metadata:
   bin:
     solidity-coverage: plugins/bin.js
   checksum: c9ca4deda9383c1db425117e72677f8908dcb2263ad41cfc1821c96afcfd5e8070146b87cd2c4b0812612fb707896928c07b776347143db838e486b4c938b394
+  languageName: node
+  linkType: hard
+
+"solmate@npm:^6.2.0":
+  version: 6.7.0
+  resolution: "solmate@npm:6.7.0"
+  checksum: f4c4ea21c74172ed1590248a05792e2362a624da3c717d87f67ed7d24cb76fc588a98eb509d6d2fe42ef7bebda87498edb8a1aeba1cd54036d13bf0e1228fbe4
   languageName: node
   linkType: hard
 
