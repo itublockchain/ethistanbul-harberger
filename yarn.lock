@@ -26,9 +26,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-<<<<<<< HEAD
-"@babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.13.10, @babel/runtime@npm:^7.17.2, @babel/runtime@npm:^7.21.0, @babel/runtime@npm:^7.23.2":
-=======
 "@alloc/quick-lru@npm:^5.2.0":
   version: 5.2.0
   resolution: "@alloc/quick-lru@npm:5.2.0"
@@ -36,8 +33,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.17.2, @babel/runtime@npm:^7.23.1, @babel/runtime@npm:^7.23.2":
->>>>>>> cb1780c12b74ff40cb0deffc108ff79082f25e59
+"@babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.13.10, @babel/runtime@npm:^7.17.2, @babel/runtime@npm:^7.21.0, @babel/runtime@npm:^7.23.1, @babel/runtime@npm:^7.23.2":
   version: 7.23.2
   resolution: "@babel/runtime@npm:7.23.2"
   dependencies:
@@ -2400,7 +2396,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-<<<<<<< HEAD
 "@pushprotocol/socket@npm:^0.5.0":
   version: 0.5.3
   resolution: "@pushprotocol/socket@npm:0.5.3"
@@ -2694,6 +2689,15 @@ __metadata:
     "@types/react-dom":
       optional: true
   checksum: 3481db1a641513a572734f0bcb0e47fefeba7bccd6ec8dde19f520719c783ef0b05a55ef0d5292078ed051cc5eda46b698d5d768da02e26e836022f46b376fd1
+  languageName: node
+  linkType: hard
+
+"@radix-ui/react-icons@npm:^1.3.0":
+  version: 1.3.0
+  resolution: "@radix-ui/react-icons@npm:1.3.0"
+  peerDependencies:
+    react: ^16.x || ^17.x || ^18.x
+  checksum: 982f3ee2271eaaa12b944506ef7701d20fad847082592d99b393b66a2ebbd4cc89e3a0ba48146ed8801418a7bfd76cd55901dc5cb7c6ef404001e7e4c73d05f6
   languageName: node
   linkType: hard
 
@@ -3077,14 +3081,6 @@ __metadata:
   dependencies:
     "@babel/runtime": ^7.13.10
   checksum: aeec13b234a946052512d05239067d2d63422f9ec70bf2fe7acfd6b9196693fc33fbaf43c2667c167f777d90a095c6604eb487e0bce79e230b6df0f6cacd6a55
-=======
-"@radix-ui/react-icons@npm:^1.3.0":
-  version: 1.3.0
-  resolution: "@radix-ui/react-icons@npm:1.3.0"
-  peerDependencies:
-    react: ^16.x || ^17.x || ^18.x
-  checksum: 982f3ee2271eaaa12b944506ef7701d20fad847082592d99b393b66a2ebbd4cc89e3a0ba48146ed8801418a7bfd76cd55901dc5cb7c6ef404001e7e4c73d05f6
->>>>>>> cb1780c12b74ff40cb0deffc108ff79082f25e59
   languageName: node
   linkType: hard
 
@@ -6004,7 +6000,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-<<<<<<< HEAD
 "camelize@npm:^1.0.0":
   version: 1.0.1
   resolution: "camelize@npm:1.0.1"
@@ -6012,10 +6007,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"caniuse-lite@npm:^1.0.30001406":
-=======
 "caniuse-lite@npm:^1.0.30001406, caniuse-lite@npm:^1.0.30001538, caniuse-lite@npm:^1.0.30001541":
->>>>>>> cb1780c12b74ff40cb0deffc108ff79082f25e59
   version: 1.0.30001563
   resolution: "caniuse-lite@npm:1.0.30001563"
   checksum: c90a1e6efc72fc73ad4a756011242211406883b36dde3a01726e7246281dcbceaf78e1ee61d1298624c4a69cf81c12b41e8d2a2f1b7c89ed84c9333026a0bfbd
@@ -6314,9 +6306,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-<<<<<<< HEAD
-"clsx@npm:^1.1.0, clsx@npm:^1.1.1":
-=======
 "clsx@npm:2.0.0, clsx@npm:^2.0.0":
   version: 2.0.0
   resolution: "clsx@npm:2.0.0"
@@ -6324,18 +6313,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"clsx@npm:^1.1.0":
->>>>>>> cb1780c12b74ff40cb0deffc108ff79082f25e59
+"clsx@npm:^1.1.0, clsx@npm:^1.1.1":
   version: 1.2.1
   resolution: "clsx@npm:1.2.1"
   checksum: 30befca8019b2eb7dbad38cff6266cf543091dae2825c856a62a8ccf2c3ab9c2907c4d12b288b73101196767f66812365400a227581484a05f968b0307cfaf12
-  languageName: node
-  linkType: hard
-
-"clsx@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "clsx@npm:2.0.0"
-  checksum: a2cfb2351b254611acf92faa0daf15220f4cd648bdf96ce369d729813b85336993871a4bf6978ddea2b81b5a130478339c20d9d0b5c6fc287e5147f0c059276e
   languageName: node
   linkType: hard
 
@@ -7056,6 +7037,13 @@ __metadata:
     domelementtype: ^2.2.0
     domhandler: ^4.2.0
   checksum: abf7434315283e9aadc2a24bac0e00eab07ae4313b40cc239f89d84d7315ebdfd2fb1b5bf750a96bc1b4403d7237c7b2ebf60459be394d625ead4ca89b934391
+  languageName: node
+  linkType: hard
+
+"dotenv@npm:^16.3.1":
+  version: 16.3.1
+  resolution: "dotenv@npm:16.3.1"
+  checksum: 15d75e7279018f4bafd0ee9706593dd14455ddb71b3bcba9c52574460b7ccaf67d5cf8b2c08a5af1a9da6db36c956a04a1192b101ee102a3e0cf8817bbcf3dfd
   languageName: node
   linkType: hard
 
@@ -11403,30 +11391,25 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "nextjs@workspace:packages/nextjs"
   dependencies:
-<<<<<<< HEAD
     "@pushprotocol/uiweb": ^1.1.19
-=======
     "@radix-ui/react-icons": ^1.3.0
->>>>>>> cb1780c12b74ff40cb0deffc108ff79082f25e59
     "@rainbow-me/rainbowkit": ^1.2.0
     "@types/node": ^18.16.12
     "@types/react": ^18.2.21
     autoprefixer: ^10.4.16
     class-variance-authority: ^0.7.0
     clsx: ^2.0.0
+    dotenv: ^16.3.1
     eslint: ^8.15.0
     eslint-config-next: ^13.4.19
     next: ^13.4.19
     postcss: ^8.4.31
     react: ^18.2.0
     react-dom: ^18.2.0
-<<<<<<< HEAD
     styled-components: ^6.1.1
-=======
     tailwind-merge: ^2.0.0
     tailwindcss: ^3.3.5
     tailwindcss-animate: ^1.0.7
->>>>>>> cb1780c12b74ff40cb0deffc108ff79082f25e59
     typescript: ^5.0.4
     viem: ~1.16.3
     wagmi: ~1.4.3
@@ -11562,17 +11545,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-<<<<<<< HEAD
-"normalize-wheel@npm:^1.0.1":
-  version: 1.0.1
-  resolution: "normalize-wheel@npm:1.0.1"
-  checksum: 00b32efa040bad9438e732385a4ca27f8532fa2c8c06b54be43b9f75b2da6642bf41a0b4f81e542639dc8d682cde8b059b0a02ae0723fb8ebc3c8f036c8e51d8
-=======
 "normalize-range@npm:^0.1.2":
   version: 0.1.2
   resolution: "normalize-range@npm:0.1.2"
   checksum: 9b2f14f093593f367a7a0834267c24f3cb3e887a2d9809c77d8a7e5fd08738bcd15af46f0ab01cc3a3d660386f015816b5c922cea8bf2ee79777f40874063184
->>>>>>> cb1780c12b74ff40cb0deffc108ff79082f25e59
+  languageName: node
+  linkType: hard
+
+"normalize-wheel@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "normalize-wheel@npm:1.0.1"
+  checksum: 00b32efa040bad9438e732385a4ca27f8532fa2c8c06b54be43b9f75b2da6642bf41a0b4f81e542639dc8d682cde8b059b0a02ae0723fb8ebc3c8f036c8e51d8
   languageName: node
   linkType: hard
 
@@ -12093,9 +12076,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-<<<<<<< HEAD
-"postcss-value-parser@npm:^4.0.2":
-=======
 "postcss-import@npm:^15.1.0":
   version: 15.1.0
   resolution: "postcss-import@npm:15.1.0"
@@ -12159,19 +12139,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-value-parser@npm:^4.0.0, postcss-value-parser@npm:^4.2.0":
->>>>>>> cb1780c12b74ff40cb0deffc108ff79082f25e59
+"postcss-value-parser@npm:^4.0.0, postcss-value-parser@npm:^4.0.2, postcss-value-parser@npm:^4.2.0":
   version: 4.2.0
   resolution: "postcss-value-parser@npm:4.2.0"
   checksum: 819ffab0c9d51cf0acbabf8996dffbfafbafa57afc0e4c98db88b67f2094cb44488758f06e5da95d7036f19556a4a732525e84289a425f4f6fd8e412a9d7442f
   languageName: node
   linkType: hard
 
-<<<<<<< HEAD
-"postcss@npm:8.4.31, postcss@npm:^8.4.31":
-=======
 "postcss@npm:8.4.31, postcss@npm:^8.4.23, postcss@npm:^8.4.31":
->>>>>>> cb1780c12b74ff40cb0deffc108ff79082f25e59
   version: 8.4.31
   resolution: "postcss@npm:8.4.31"
   dependencies:
@@ -13877,12 +13852,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-<<<<<<< HEAD
 "stylis@npm:^4.3.0":
   version: 4.3.0
   resolution: "stylis@npm:4.3.0"
   checksum: 6120de3f03eacf3b5adc8e7919c4cca991089156a6badc5248752a3088106afaaf74996211a6817a7760ebeadca09004048eea31875bd8d4df51386365c50025
-=======
+  languageName: node
+  linkType: hard
+
 "sucrase@npm:^3.32.0":
   version: 3.34.0
   resolution: "sucrase@npm:3.34.0"
@@ -13898,7 +13874,6 @@ __metadata:
     sucrase: bin/sucrase
     sucrase-node: bin/sucrase-node
   checksum: 61860063bdf6103413698e13247a3074d25843e91170825a9752e4af7668ffadd331b6e99e92fc32ee5b3c484ee134936f926fa9039d5711fafff29d017a2110
->>>>>>> cb1780c12b74ff40cb0deffc108ff79082f25e59
   languageName: node
   linkType: hard
 
