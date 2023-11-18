@@ -13,6 +13,9 @@ import {
 	zora,
 } from "wagmi/chains"
 import { publicProvider } from "wagmi/providers/public"
+import { Lexend } from "next/font/google"
+
+const lexend = Lexend({ subsets: ["latin"] })
 
 const { chains, publicClient, webSocketPublicClient } = configureChains(
 	[
@@ -42,11 +45,13 @@ const wagmiConfig = createConfig({
 
 function MyApp({ Component, pageProps }: AppProps) {
 	return (
-		<WagmiConfig config={wagmiConfig}>
-			<RainbowKitProvider chains={chains}>
-				<Component {...pageProps} />
-			</RainbowKitProvider>
-		</WagmiConfig>
+		<div className={lexend.className}>
+			<WagmiConfig config={wagmiConfig}>
+				<RainbowKitProvider chains={chains}>
+					<Component {...pageProps} />
+				</RainbowKitProvider>
+			</WagmiConfig>
+		</div>
 	)
 }
 
