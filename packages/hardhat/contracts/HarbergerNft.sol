@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.17;
+pragma solidity ^0.8.17;
 
-import "solmate/src/auth/Owned.sol";
-import "solmate/src/tokens/ERC721.sol";
-import {FixedPointMathLib} from "solmate/src/utils/FixedPointMathLib.sol";
+import "./solmate/src/auth/Owned.sol";
+import "./solmate/src/tokens/ERC721.sol";
+import {FixedPointMathLib} from "./solmate/src/utils/FixedPointMathLib.sol";
 import {LibBase37} from "./utils/LibBase37.sol";
 
 /// @title HarbergerNft
@@ -135,6 +135,7 @@ contract HarbergerNft is ERC721, Owned {
     /// @notice sets initial values
     /// @param _name name of the contract
     /// @param _symbol symbol of the contract
+    /// @param yearlyRegularPrice yearly regular price
     /// @param initialHarbergerMintPrice starting price of mint dutch auction
     /// @param mintStartTimestamp starting time of mint dutch auction
     /// @param _yearlyTaxBps yearly tax in bps
