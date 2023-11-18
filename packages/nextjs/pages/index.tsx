@@ -4,7 +4,7 @@ import Head from "next/head"
 
 const Home: NextPage = () => {
 	return (
-		<div className="bg-red-200 h-20 w-20">
+		<div className="bg-red-200">
 			<Head>
 				<title>RainbowKit App</title>
 				<meta
