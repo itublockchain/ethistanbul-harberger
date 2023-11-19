@@ -259,8 +259,8 @@ contract HarbergerNft is ERC721, Owned {
         prices[id] = newPrice;
 
         forcedTransferFrom(oldOwner, msg.sender, id);
-        oldOwner.call{value: buyPrice}("");
-        emit Buy(id, newPrice, newExpirationDate);
+        (bool success, ) = oldOwner.call{value: buyPrice}("");
+        require(success, "Payment to old owner failed");
     }
 
     /// @notice sets custom resolver address for a token
