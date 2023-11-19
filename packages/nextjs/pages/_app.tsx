@@ -50,7 +50,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 		<div className={lexend.className}>
 			<WagmiConfig config={wagmiConfig}>
 				<RainbowKitProvider chains={chains}>
-					<div className="flex flex-col min-h-screen w-screen item-center justify-start px-4 bg-white">
+					<div className="flex flex-col min-h-screen w-screen item-center justify-start px-4 bg-white min-w-[375px]">
 						<Navbar />
 						<Component {...pageProps} />
 					</div>

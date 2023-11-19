@@ -112,7 +112,7 @@ const generateTsAbis: DeployFunction = async function () {
   }
   fs.writeFileSync(
     `${TARGET_DIR}deployedContracts.ts`,
-    prettier.format(`const deployedContracts = {${fileContent}} as const; `, {
+    prettier.format(`export const deployedContracts = {${fileContent}}; `, {
       parser: "typescript",
     }),
   );
