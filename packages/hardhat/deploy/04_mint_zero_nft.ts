@@ -1,5 +1,6 @@
 import { HardhatRuntimeEnvironment } from "hardhat/types";
 import { DeployFunction } from "hardhat-deploy/types";
+import { BigNumber } from "ethers";
 
 /**
  * Deploys a contract named "YourContract" using the deployer account and
@@ -7,7 +8,7 @@ import { DeployFunction } from "hardhat-deploy/types";
  *
  * @param hre HardhatRuntimeEnvironment object.
  */
-const deployYourContract: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
+const mintZeroNft: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
   /*
     On localhost, the deployer account is the one that comes with Hardhat, which is already funded.
 
@@ -18,14 +19,20 @@ const deployYourContract: DeployFunction = async function (hre: HardhatRuntimeEn
     with a random private key in the .env file (then used on hardhat.config.ts)
     You can run the `yarn account` command to check your balance in every network.
   */
-  const { deployer } = await hre.getNamedAccounts();
-  const { deploy } = hre.deployments;
+  const deployer = (await hre.ethers.getSigners())[0];
+
+  const HarbergerNFT = await hre.ethers.getContract("HarbergerNft", deployer);
+  try {
+    const tx = await HarbergerNFT.connect(deployer).mintHarberger(1, 123, {
+      value: BigNumber.from(await HarbergerNFT.calculateMintPrice()).add(123),
+    });
+    await tx.wait();
+  } catch (e) {
+    console.log(e);
+  }
 
   // Get the deployed contract
   // const yourContract = await hre.ethers.getContract("YourContract", deployer);
 };
 
-export default deployYourContract;
-
-// Tags are useful if you have multiple deploy files and only want to run one of them.
-// e.g. yarn deploy --tags YourContract
+export default mintZeroNft;

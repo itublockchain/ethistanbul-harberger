@@ -111,7 +111,7 @@ export default function Navbar({
 													<button
 														onClick={openChainModal}
 														type="button"
-														className="bg-[#3DB9CF] rounded-md text-white text-md"
+														className="w-32 h-12 bg-[#3DB9CF] rounded-md text-white text-md"
 													>
 														Wrong network
 													</button>

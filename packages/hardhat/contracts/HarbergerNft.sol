@@ -5,6 +5,7 @@ import "./solmate/src/auth/Owned.sol";
 import "./solmate/src/tokens/ERC721.sol";
 import {FixedPointMathLib} from "./solmate/src/utils/FixedPointMathLib.sol";
 import {LibBase37} from "./utils/LibBase37.sol";
+import "hardhat/console.sol";
 
 /// @title HarbergerNft
 /// @author oemerfurkan
@@ -49,7 +50,7 @@ contract HarbergerNft is ERC721, Owned {
     /// @notice whether the contract is paused
     /// @notice pauses every state changing non-owner function except approve and setApprovalForAll
     /// @dev can be changed by the contract owner
-    bool public paused = true;
+    bool public paused = false;
 
     /// @notice token id to its harberger price determined by the token owner
     mapping(uint256 => uint256) public prices;
@@ -185,7 +186,9 @@ contract HarbergerNft is ERC721, Owned {
     function mintHarberger(uint256 id, uint256 price) external payable notPaused {
         require(id > 0, "zero id can not be minted");
         require(isHarberger(id));
+        console.log(isHarberger(id));
         uint256 expirationDate = expirationDateAfterMint(price, msg.value);
+        console.log("expirationDate: %s", expirationDate);
         require(expirationDate > block.timestamp + minimumPeriod, "Insufficient payment");
 
         expirationDates[id] = expirationDate;
@@ -329,6 +332,8 @@ contract HarbergerNft is ERC721, Owned {
     /// @param payment price paid for mint
     /// @return expirationDate expiration date after mint
     function expirationDateAfterMint(uint256 price, uint256 payment) public view returns (uint256 expirationDate) {
+        console.log("price: %s", payment);
+        console.log("payment: %s", calculateMintPrice());
         uint256 extensionPayment = payment - calculateMintPrice();
         uint256 yearlyTax = price.mulDivUp(yearlyTaxBps, MAX_BPS);
         expirationDate = block.timestamp + extensionPayment.mulDivDown(365 days, yearlyTax);
