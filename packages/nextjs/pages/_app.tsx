@@ -4,15 +4,16 @@ import Navbar from "@/components/Navbar"
 import { Lexend } from "next/font/google"
 const lexend = Lexend({ subsets: ["latin"] })
 
-import { Web3Modal } from "../context/Web3Modal";
+import { Web3Modal } from "../context/Web3Modal"
 
 function MyApp({ Component, pageProps }: AppProps) {
 	return (
-			<Web3Modal>
-				<div className={lexend.className}>
-					<w3m-button />
-				</div>
-			</Web3Modal>
+		<Web3Modal>
+			<div className={lexend.className}>
+				<Navbar />
+				<Component {...pageProps} />
+			</div>
+		</Web3Modal>
 	)
 }
 
