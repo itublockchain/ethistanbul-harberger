@@ -23,7 +23,7 @@ const mintZeroNft: DeployFunction = async function (hre: HardhatRuntimeEnvironme
 
   const HarbergerNFT = await hre.ethers.getContract("HarbergerNft", deployer);
   try {
-    const tx = await HarbergerNFT.connect(deployer).mintHarberger(1, 123, {
+    const tx = await HarbergerNFT.connect(deployer).mintHarberger(1, 2, {
       value: BigNumber.from(await HarbergerNFT.calculateMintPrice()).add(123),
     });
     await tx.wait();

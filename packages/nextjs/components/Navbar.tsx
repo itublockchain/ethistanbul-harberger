@@ -24,7 +24,7 @@ export default function Navbar({
 			<div className="w-full h-full flex justify-between items-center px-10">
 				<a href="/" className="flex items-center justify-center gap-6">
 					<Image src={logo} alt="logo" width={50} />
-					<p className="md:text-4xl text-2xl md:block hidden">APP NAME</p>
+					<p className="md:text-4xl text-2xl md:block hidden">meETH</p>
 				</a>
 				<div className="hidden flex-row gap-4 md:flex">
 					<div>
