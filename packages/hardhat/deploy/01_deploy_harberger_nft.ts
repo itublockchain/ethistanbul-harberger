@@ -20,6 +20,7 @@ const deployYourContract: DeployFunction = async function (hre: HardhatRuntimeEn
   */
   const { deployer } = await hre.getNamedAccounts();
   const { deploy } = hre.deployments;
+  console.log(deployer);
 
   /// @param _name name of the contract
   /// @param _symbol symbol of the contract
@@ -32,7 +33,7 @@ const deployYourContract: DeployFunction = async function (hre: HardhatRuntimeEn
   await deploy("HarbergerNft", {
     from: deployer,
     // Contract constructor arguments
-    args: ["HarbergerNFT", "HARBNFT", 100, 100, 100, 100, 100],
+    args: ["HarbergerNFT", "HARBNFT", 1, 1, 0, 1, 1000],
     log: true,
     // autoMine: can be passed to the deploy function to make the deployment process faster on local networks by
     // automatically mining the contract deployment transaction. There is no effect on live networks.

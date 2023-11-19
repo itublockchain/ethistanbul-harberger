@@ -42,7 +42,7 @@ export default function Search() {
 							<CommandItem
 								value={domain}
 								onSelect={(value) => {
-									router.push(`/me/cards/${value}`)
+									router.push(`/me/${value}`)
 									setDomain("")
 								}}
 								className="text-xl -mt-1"
