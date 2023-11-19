@@ -67,24 +67,10 @@ export default function CardPage() {
 		abi: deployedContracts["31337"].HarbergerNft.abi,
 		functionName: "payTax",
 		args: [base37ToId((domain as string) || "").toString()],
-		value: ethers.BigNumber.from(Number(data[2].result))
-			.mul(Number(data[3].result))
-			.mul(365 * 24 * 60 * 60)
-			.mul(sliderValue * 24 * 60 * 60)
-			.div(MAX_BPS)
-			.toString(),
+		value: ethers.utils.parseEther("1"),
 	})
 
 	if (!isMounted) return null
-
-	console.log(
-		ethers.BigNumber.from(Number(data[2].result))
-			.mul(Number(data[3].result))
-			.mul(365 * 24 * 60 * 60)
-			.mul(sliderValue * 24 * 60 * 60)
-			.div(MAX_BPS)
-			.toString()
-	)
 
 	const isNotMinted = data && data[0].status == "failure"
 
