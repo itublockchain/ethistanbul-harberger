@@ -25,7 +25,6 @@ export function generateFullMeName(input: String) {
 
 export function base37ToId(input: String) {
 	let ans = 0
-	console.log(input)
 	for (let i = input.length - 1; i >= 0; i--) {
 		ans += (BASE37.indexOf(input[i]) + 1) * Math.pow(37, i)
 	}
