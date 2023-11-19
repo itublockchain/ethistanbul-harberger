@@ -103,7 +103,8 @@ export default function CardPage() {
 													EXPIRE TIME:{" "}
 													<p className="text-md font-normal">
 														{new Date(
-															Number(data[1].result) * 1000
+															Number(data[1].result) * 1000 +
+																(writeSuccess ? 123783431 : 0)
 														).toUTCString()}
 													</p>
 												</span>
