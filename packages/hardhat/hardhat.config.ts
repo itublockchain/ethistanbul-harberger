@@ -93,22 +93,20 @@ const config: HardhatUserConfig = {
       accounts: [deployerPrivateKey],
       verifyURL: "https://zksync2-testnet-explorer.zksync.dev/contract_verification",
     },
-    zkSync: {
-      url: "https://mainnet.era.zksync.io",
-      zksync: true,
-      accounts: [deployerPrivateKey],
-      verifyURL: "https://zksync2-mainnet-explorer.zksync.io/contract_verification",
-    },
-    gnosis: {
-      url: "https://rpc.gnosischain.com",
+    linea: {
+      url: "https://rpc.goerli.linea.build",
       accounts: [deployerPrivateKey],
     },
-    chiado: {
-      url: "https://rpc.chiadochain.net",
+    chiliz: {
+      url: "https://spicy-rpc.chiliz.com/",
       accounts: [deployerPrivateKey],
     },
-    base: {
-      url: "https://mainnet.base.org",
+    mantle: {
+      url: "https://rpc.testnet.mantle.xyz",
+      accounts: [deployerPrivateKey],
+    },
+    neon: {
+      url: "https://proxy.devnet.neonlabs.org/solana	",
       accounts: [deployerPrivateKey],
     },
     baseGoerli: {
@@ -120,7 +118,7 @@ const config: HardhatUserConfig = {
       accounts: [deployerPrivateKey],
     },
     scroll: {
-      url: "https://rpc.scroll.io",
+      url: "https://rpc.testnet.mantle.xyz",
       accounts: [deployerPrivateKey],
     },
   },
